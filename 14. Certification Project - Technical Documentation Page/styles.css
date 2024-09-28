@@ -1,0 +1,23 @@
+*{
+    box-sizing:border-box;
+  }
+  #navbar{
+    position:fixed;
+  width:200px;
+  height:100%;
+  top:0;
+  left:0;
+  background-color:#1B1B32;
+  }
+  #navbar a{
+    display:block;
+  color:white;
+  }
+  #main-doc{
+    margin-left:220px;
+  }
+  @media (max-width:600px){
+    #navbar{
+      width:0px;
+    }
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">My Survey Web<h1>
+    <p id="description">This is my first web</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Your information</legend>
+        <label for="name" id="name-label">Input your fullname <input type="text" id="name" placeholder="Your full name" required></label>
+        <label for="email" id="email-label">Input your email <input type="email" id="email" placeholder="example@email.com" required></label>
+        <label for="number" id="number-label">Input your id number <input type="number" id="number" placeholder="123456" minlenght="6" min="000000" max="999999"></label>
+      </fieldset>
+      <fieldset>
+        <legend>Your lore</legend>
+        <select id="dropdown" >
+            <option value="" disabled selected>choose one</option>
+            <option value="1">teacher</option>
+            <option value="2">student</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Your position</legend>
+        <label><input type="radio" name="position" value="inside"> inside the city</label>
+        <label><input type="radio" name="position" value="outside"> outside the city</label>
+      </fieldset>
+      <fieldset>
+        <legend>Your device</legend>
+        <label><input type="checkbox"  value="computer"> Computer</label>
+        <label><input type="checkbox" value="laptop"> Laptop</label>
+        <label><input type="checkbox" value="smartphone"> Smartphone</label>
+      </fieldset>
+      <fieldset>
+        <legend>Your reason</legend>
+        <label>Fill if you cant come to school<textarea></textarea></label>
+      </fieldset>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
