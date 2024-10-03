@@ -1,3 +1,6 @@
+*{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 #img-div{
     display:flex;
     justify-content:center;
@@ -9,3 +12,30 @@
     aspect-ratio:2/1;
     object-fit:cover;
   }
+  h1{
+    text-align: center;
+  }
+  .description{
+    text-align: center;
+  }
+  main{
+    margin: 40px 2px 0 2px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  #tribute-info h2{
+    text-align: center;
+  }
+  ul{
+    margin: 30px auto;
+    width: 400px;
+  }
+  li{
+    margin: 10px;
+  }
+  a{
+    color: black;
+  }
+
+  
