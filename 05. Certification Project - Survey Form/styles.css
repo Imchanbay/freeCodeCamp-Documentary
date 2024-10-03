@@ -22,14 +22,13 @@
   fieldset{
     border: none;
     padding: 2rem 0;
-    border-bottom: 3px solid #3b3b4f;
   }
   fieldset:last-of-type{
     border-bottom: none;
   }
   label{
     display: block;
-    margin: 0.5rem 0;
+    margin: 0.5em 0;
   }
   input, textarea, select{
     margin: 10px 0 0 0;
@@ -37,6 +36,21 @@
     min-height: 2em;
   }
   input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }
+  input::valid{
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }
+  option{
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }
+  select{
     background-color: #0a0a23;
     border: 1px solid #0a0a23;
     color: #ffffff;
