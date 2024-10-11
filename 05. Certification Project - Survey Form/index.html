@@ -11,6 +11,10 @@
     <p id="description">
       Please fill out this survey for registration requirement
     </p>
+    <!-- action Specifies the URL where the form data should be submitted. -->
+    <!-- method Specifies the HTTP method used when submitting the form. Common values:
+    GET: Sends form data as URL parameters (data appears in the URL).
+    POST: Sends form data in the body of the request. -->
     <form method="post" action="" id="survey-form">
       <fieldset>
         <fieldset>
@@ -47,6 +51,7 @@
         </fieldset>
         <fieldset>
           <legend>Survey</legend>
+          <!-- this is another way to make select form control, with this set, user cant skip this section -->
           <label for="dropdown"
             >Which field do you want to enter?
             <select name="dropdown" id="dropdown" required>

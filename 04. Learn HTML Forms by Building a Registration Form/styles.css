@@ -9,6 +9,8 @@ body {
   }
   
   h1, p {
+    /* em and rem are both relative units used for sizing elements such as font size, margins, padding, and other properties */
+    /* em unit is relative to the font size of the parent element */
     margin: 1em auto;
     text-align: center;
   }
@@ -18,20 +20,23 @@ body {
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
+    /* rem unit stands for "root em", and it is relative to the font size of the root element */
     padding-bottom: 2em;
   }
   
   fieldset {
+    /* make border dissappear */
     border: none;
     padding: 2rem 0;
     border-bottom: 3px solid #3b3b4f;
   }
-  
+  /* last-of-type is seudo-class, which is used to select the last element of a given type within its parent */
   fieldset:last-of-type {
     border-bottom: none;
   }
   
   label {
+    /* make it behave as a block, fill the maximum width and make a new line */
     display: block;
     margin: 0.5rem 0;
   }
@@ -51,6 +56,7 @@ body {
   }
   
   .inline {
+    /* to make the width is unset, like never be set */
     width: unset;
     margin: 0 0.5em 0 0;
     vertical-align: middle;
@@ -66,12 +72,13 @@ body {
     border-color: white;
     min-width: 300px;
   }
-  
+  /* input[type="file"] refers to an <input> element with its type attribute set to "file" */
   input[type="file"] {
     padding: 1px 2px;
   }
   
   .inline{
+    /* make the width is only as long as needed and wont make a new line */
     display: inline; 
   }
   

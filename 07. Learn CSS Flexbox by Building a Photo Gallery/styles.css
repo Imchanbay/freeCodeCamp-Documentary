@@ -1,3 +1,4 @@
+/* to select all selectors */
 * {
     box-sizing: border-box;
   }
@@ -11,13 +12,14 @@
   .header {
     text-align: center;
     text-transform: uppercase;
-    padding: 32px;
     background-color: #0a0a23;
     color: #fff;
     border-bottom: 4px solid #fdb347;
   }
   
   .gallery {
+    /* The display: flex; CSS property is part of the Flexbox layout model, which provides a more efficient way to arrange and distribute space among items in a container, even when their size is unknown or dynamic */
+    /* flex container and flex items */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -28,7 +30,7 @@
     margin: 0 auto;
     padding: 20px 10px;
   }
-  
+  /* it will select all img element within an element with class "gallery" */
   .gallery img {
     width: 100%;
     max-width: 350px;
@@ -36,7 +38,7 @@
     object-fit: cover;
     border-radius: 10px;
   }
-  
+  /* :after pseudo-element in CSS is used to insert content after the content of a selected element. ::after is a recommended syntax */
   .gallery::after {
     content: "";
     width: 350px;

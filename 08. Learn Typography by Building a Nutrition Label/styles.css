@@ -89,7 +89,7 @@
   .double-indent {
     margin-left: 2em;
   }
-  
+  /* :not() pseudo-class in CSS is used to select elements that do not match a specified selector. */
   .daily-value p:not(.no-divider) {
     border-bottom: 1px solid #888989;
   }

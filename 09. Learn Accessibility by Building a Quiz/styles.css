@@ -1,3 +1,4 @@
+/* @media~~ is used to apply styles based on the user's preference for reduced motion in user interfaces. */
 @media (prefers-reduced-motion: no-preference) {
     * {
       scroll-behavior: smooth;
@@ -40,7 +41,7 @@
     max-width: 300px;
     height: 50px;
   }
-  
+  /* nav > ul {} is a child combinator selector that targets all <ul> (unordered list) elements that are direct children of <nav> (navigation) elements */
   nav > ul {
     display: flex;
     justify-content: space-evenly;
@@ -57,7 +58,7 @@
     padding: 0.2rem;
     display: block;
   }
-  
+  /* hover is to set element behaivor when user move the cursor to it */
   nav > ul > li:hover {
     background-color: #dfdfe2;
     color: #1b1b32;
@@ -131,7 +132,7 @@
     padding-left: 15px;
     font-size: 20px;
   }
-  
+  /* ::before pseudo-element in CSS is used to insert content before an element's actual content. */
   h3::before {
     content: "Question #";
   }

@@ -8,14 +8,18 @@
   <body>
     <main>
       <h1>CatPhotoApp</h1>
+      <!-- section is used to group related content into a distinct section of a webpage -->
       <section>
         <h2>Cat Photos</h2>
         <!-- TODO: Add link to cat photos -->
+        <!-- a is used to link webpage to another page, it can be used inside of a string element -->
+        <!-- _blank is mena that it will go to a new tab, while _self will still on the same tab-->
         <p>
           See more
           <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>
           in our gallery.
         </p>
+        <!-- a also can be used inside of an image element, it will make the image is clickable -->
         <a href="https://freecatphotoapp.com"
           ><img
             src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
@@ -25,11 +29,15 @@
       <section>
         <h2>Cat Lists</h2>
         <h3>Things cats love:</h3>
+        <!-- ul stand for un listed element, it give dot before li elemenet, the other type is ol, stand fot ordered list that will give number before li element -->
+        <!-- li itself stand for list item, li fullfill the ul/ol element -->
         <ul>
           <li>cat nip</li>
           <li>laser pointers</li>
           <li>lasagna</li>
         </ul>
+        <!-- figure is used to group image content, there is two content of an image can be, the image and the caption -->
+        <!-- figcaption is used to give an image a caption -->
         <figure>
           <img
             src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
@@ -44,6 +52,7 @@
           <li>other cats</li>
         </ol>
         <figure>
+          <!-- atributes for image are src and alt, src is for image source and alt is for alternative text that will be shown if the image cannot be loaded by the page-->
           <img
             src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
             alt="Five cats looking around a field."
@@ -54,8 +63,12 @@
       <section>
         <h2>Cat Form</h2>
         <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <!-- fieldset is used to group related form controls within a web form-->
           <fieldset>
+            <!-- legend is used to give a fieldset element a title, it can't be used wothout a fie;dset element -->
             <legend>Is your cat an indoor or outdoor cat?</legend>
+            <!-- label is used to create a clickable label for a form control -->
+             <!-- these two label are used in explicit way -->
             <label
               ><input
                 id="indoor"
@@ -86,6 +99,7 @@
               checked
             />
             <label for="loving">Loving</label>
+            <!-- label is also can be used like this, as long as for atribute of label has the same value of id atribute of form control -->
             <input id="lazy" type="checkbox" name="personality" value="lazy" />
             <label for="lazy">Lazy</label>
             <input
@@ -102,6 +116,7 @@
             placeholder="cat photo URL"
             required
           />
+          <!-- this button is also can be changed with input type submit and value Submit -->
           <button type="submit">Submit</button>
         </form>
       </section>
