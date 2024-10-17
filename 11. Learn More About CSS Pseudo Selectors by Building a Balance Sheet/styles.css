@@ -1,5 +1,8 @@
+/* it will target any span element where class atribute value is sr-only */
 span[class~="sr-only"] {
+  /* !important is a keyword used to give a style higher priority than other conflicting rules. */
     border: 0 !important;
+    /* clip is a property used to define a rectangular region where an element is visible, hiding anything outside of it */
     clip: rect(1px, 1px, 1px, 1px) !important;
     clip-path: inset(50%) !important;
     height: 1px !important;
@@ -50,6 +53,7 @@ span[class~="sr-only"] {
     display: flex;
     justify-content: flex-end;
     position: sticky;
+    /* z-index used to make content upper/lower than the others */
     z-index: 999;
     top: 0;
     background: #0a0a23;
@@ -57,7 +61,7 @@ span[class~="sr-only"] {
     padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
     margin: 0 -2px;
   }
-  
+  /* it will target any span that has class inside of element with id of year  */
   #years span[class] {
     font-weight: bold;
     width: 4.5rem;
@@ -69,6 +73,7 @@ span[class~="sr-only"] {
   }
   
   table {
+    /* border-collapse will erase gap between tabel, the default is separate */
     border-collapse: collapse;
     border: 0;
     width: 100%;
@@ -90,16 +95,16 @@ span[class~="sr-only"] {
     min-width: 4rem;
     max-width: 4rem;
   }
-  
+  /* it will target any th element inside tbody element */
   tbody th {
     width: calc(100% - 12rem);
   }
-  
+  /* it will select tr element that have 'total' word in its class */
   tr[class="total"] {
     border-bottom: 4px double #0a0a23;
     font-weight: bold;
   }
-  
+  /* it will target any th element inside a tr element that has 'total' word inside of its class */
   tr[class="total"] th {
     text-align: left;
     padding: 0.5rem 0 0.25rem 0.5rem;
@@ -109,7 +114,7 @@ span[class~="sr-only"] {
     text-align: right;
     padding: 0 0.25rem;
   }
-  
+  /* it will select an n th type with n of 3 that inside tr element with class total  */
   tr.total td:nth-of-type(3) {
     padding-right: 0.5rem;
   }
@@ -121,7 +126,7 @@ span[class~="sr-only"] {
   td.current {
     font-style: italic;
   }
-  
+  /* it will target the tr element with class of data */
   tr.data {
     background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
   }
@@ -131,7 +136,7 @@ span[class~="sr-only"] {
     padding-top: 0.3rem;
     padding-left: 0.5rem;
   }
-  
+  /* it a bit hard, normally useless, make it simple guys */
   tr.data th .description {
     display: block;
     font-weight: normal;
